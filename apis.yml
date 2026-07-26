@@ -1,8 +1,20 @@
 aid: extropic
 name: Extropic
-description: 'Extropic is a company surfaced as a portfolio company of kindred-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Extropic is a hardware company building thermodynamic (probabilistic) computing
+  systems designed to run generative AI workloads at dramatically lower energy cost
+  than GPUs. Its core hardware is the Thermodynamic Sampling Unit (TSU) — an
+  inherently probabilistic chip whose physics natively performs the sampling that
+  probabilistic AI algorithms depend on — together with the XTR-0 prototype platform
+  for low-latency communication between Extropic chips and traditional processors.
+  Extropic also develops THRML, an open-source JAX library for building and sampling
+  probabilistic graphical models (block Gibbs sampling and energy-based models),
+  which serves as a simulator and prototyping surface for the block-sampling programs
+  that will one day run on TSU hardware. Extropic is not an API provider: it ships no
+  REST/GraphQL API, developer portal, or hosted service — its public developer
+  surface is the THRML Python library, its documentation, and an agent skill. Backed
+  by Kindred Ventures; surfaced to the API Evangelist network as an AI-hardware
+  portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/extropic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +22,31 @@ x-backed-by:
 - kindred-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://extropic.ai/
 tags:
 - Company
 - Ai
+- Hardware
+- Semiconductors
+- Thermodynamic Computing
+- Probabilistic Computing
+- Energy-Based Models
+- Machine Learning
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +56,34 @@ maintainers:
 common:
 - type: Website
   url: https://extropic.ai/
+- type: Documentation
+  url: https://docs.thrml.ai/
+- type: APIReference
+  url: https://docs.thrml.ai/api-pgm.html
+- type: GettingStarted
+  url: https://docs.thrml.ai/getting-started.html
+- type: Blog
+  url: https://extropic.ai/writing
+- type: GitHubOrganization
+  url: https://github.com/extropic-ai
+- type: SourceCode
+  url: https://github.com/extropic-ai/thrml
+- type: PrivacyPolicy
+  url: https://extropic.ai/privacy-policy
+- type: TermsOfService
+  url: https://extropic.ai/terms-of-service
+- type: Packages
+  url: packages/extropic-packages.yml
+- type: SDKs
+  url: packages/extropic-packages.yml
+- type: LLMsTxt
+  url: llms/extropic-llms.txt
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DomainSecurity
+  url: security/extropic-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

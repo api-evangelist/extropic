@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of extropic.ai /.well-known/*
+host: https://extropic.ai
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Extropic publishes no /.well-known discovery documents. No API catalog, OAuth
+  metadata, security.txt, or AI plugin manifest present. Recorded for auditability;
+  no WellKnown/SecurityTxt pointer emitted (nothing found).

@@ -1,0 +1,14 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/extropic-ai/thrml-skill
+skills:
+- file: extropic-thrml.md
+  name: thrml
+  description: >-
+    Write correct, idiomatic THRML code, centered on Ising machines and how they
+    are trained. THRML is Extropic's JAX-based GPU simulator for block Gibbs
+    sampling programs that run natively on Extropic's probabilistic computing
+    hardware.
+  library: thrml
+  source: https://github.com/extropic-ai/thrml-skill
+  official: true

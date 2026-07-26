@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/thrml/
+packages:
+- language: python
+  registry: pypi
+  name: thrml
+  url: https://pypi.org/project/thrml/
+  install: pip install thrml
+  official: true
+  license: Apache-2.0
+  source_code: https://github.com/extropic-ai/thrml
+  docs: https://docs.thrml.ai/
+  description: >-
+    Thermodynamic Hypergraphical Model Library — a JAX library for building and
+    sampling probabilistic graphical models, with a focus on efficient block Gibbs
+    sampling and energy-based models. Prototype for Extropic's probabilistic
+    computing hardware (TSUs).

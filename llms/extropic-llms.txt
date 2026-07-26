@@ -1,0 +1,25 @@
+# THRML
+
+> THRML is a JAX library for building and sampling probabilistic graphical models, with a focus on efficient block Gibbs sampling and energy-based models. A model is built from nodes and factors, divided into blocks via graph-colouring so each block resamples in parallel, and run by a sampling program. THRML supports sparse, heterogeneous graphs and pytree node states, and is a natural place to prototype today and experiment with future Extropic hardware.
+
+## Docs
+- [Getting started](https://docs.thrml.ai/getting-started.html): install THRML and sample a first Ising chain.
+- [Concepts](https://docs.thrml.ai/concepts.html): blocks, factors, programs, the global state, and the factor/sampler hierarchies.
+
+## Examples
+- [00 Getting Started with THRML](https://docs.thrml.ai/00_probabilistic_computing.html): What a probabilistic computer is, how Extropic's sampling hardware works, and a first model sampled with THRML.
+- [01 All of THRML](https://docs.thrml.ai/01_all_of_thrml.html): The whole library end to end: nodes and blocks, factors and interaction groups, programs, and block Gibbs sampling.
+- [02 Spin Models in THRML](https://docs.thrml.ai/02_spin_models.html): Ising and spin energy-based models built from scratch, then scaled to measure block-Gibbs throughput on 8 B200s.
+- [03 Codon Optimization with THRML](https://docs.thrml.ai/03_codon_optimization.html): A real design problem end to end: optimize a gene's codons by writing the objective as an energy function, building it as a Potts model and an equivalent Ising model, and sampling with simulated annealing.
+
+## API reference
+- [Graphical model components](https://docs.thrml.ai/api-pgm.html): Nodes are the variables of a graphical model. A node carries the type and shape of one site's state. (AbstractNode, SpinNode, CategoricalNode)
+- [Block management](https://docs.thrml.ai/api-blocks.html): A block is an ordered collection of nodes of the same type, the unit that block Gibbs updates in parallel. These tools build blocks and map between block state and the packed global state. (Block, BlockSpec, block_state_to_global, from_global_state, get_node_locations, make_empty_block_state, verify_block_state)
+- [Factors](https://docs.thrml.ai/api-factors.html): Factors organize the interactions between variables and synthesize them into interaction groups. A FactorSamplingProgram wraps a set of factors into a runnable sampler. (AbstractFactor, WeightedFactor, FactorSamplingProgram)
+- [Interaction groups](https://docs.thrml.ai/api-interaction.html): An interaction group is the compiled, array-friendly form of a factor's interactions, ready for block Gibbs. (InteractionGroup)
+- [Conditional samplers](https://docs.thrml.ai/api-samplers.html): Conditional samplers draw a block's new state given its neighbors. They are the per-block kernels that block Gibbs strings together. (AbstractConditionalSampler, AbstractParametricConditionalSampler, BernoulliConditional, SoftmaxConditional)
+- [Block sampling](https://docs.thrml.ai/api-block-sampling.html): The sampling engine: schedules, programs, and the entry points that run block Gibbs and read states back. (SamplingSchedule, BlockGibbsSpec, BlockSamplingProgram, sample_states, sample_blocks, sample_single_block, sample_with_observation)
+- [Sampling observers](https://docs.thrml.ai/api-observers.html): Observers accumulate statistics over a chain as it runs, so you read off moments or stored states without materializing every sample. (AbstractObserver, StateObserver, MomentAccumulatorObserver)
+- [Energy-based models](https://docs.thrml.ai/api-ebm.html): Energy-based models define a distribution through an energy function. THRML factorizes that energy so block Gibbs can sample it. (AbstractEBM, AbstractFactorizedEBM, FactorizedEBM, EBMFactor)
+- [Discrete energy-based models](https://docs.thrml.ai/api-discrete-ebm.html): Discrete EBM building blocks for spin and categorical variables, with square-tensor specializations and their matching Gibbs conditionals. (DiscreteEBMFactor, DiscreteEBMInteraction, SquareDiscreteEBMFactor, SpinEBMFactor, CategoricalEBMFactor, SquareCategoricalEBMFactor, SpinGibbsConditional, CategoricalGibbsConditional)
+- [Ising models](https://docs.thrml.ai/api-ising.html): A ready-made Ising energy-based model, its sampling program, and the utilities to initialize, train, and estimate its moments. (IsingEBM, IsingSamplingProgram, IsingTrainingSpec, hinton_init, estimate_moments, estimate_kl_grad)
