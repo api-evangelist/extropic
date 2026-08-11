@@ -54,6 +54,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: IssueTracker
+  url: https://github.com/extropic-ai/thrml/issues
+- type: Releases
+  url: https://github.com/extropic-ai/thrml/releases
+- type: ContributionGuide
+  url: https://github.com/extropic-ai/thrml/blob/main/CONTRIBUTING.md
+- type: License
+  name: Apache-2.0
+  url: https://github.com/extropic-ai/thrml/blob/main/LICENSE
 - type: Website
   url: https://extropic.ai/
 - type: Documentation
