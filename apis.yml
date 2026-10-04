@@ -50,6 +50,9 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 image: https://extropic.ai/
+x-docs-platform: readthedocs
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
 - Company
 - Artificial Intelligence
@@ -58,8 +61,8 @@ tags:
 - Thermodynamic Computing
 - Probabilistic Computing
 - Energy-Based Models
-- Machine-Learning
-- Open-Source
+- Machine Learning
+- Open Source
 tags_raw:
 - Company
 - Ai
@@ -70,6 +73,8 @@ tags_raw:
 - Energy-Based Models
 - Machine Learning
 - Open Source
+- Machine-Learning
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
