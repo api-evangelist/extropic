@@ -64,6 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Extropic is a company surfaced as a portfolio company of kindred-ventures and added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.
+Extropic is a hardware company building thermodynamic (probabilistic) computing systems designed to run generative AI workloads at dramatically lower energy cost than GPUs. Its core hardware is the Thermodynamic Sampling Unit (TSU) — an inherently probabilistic chip whose physics natively performs the sampling that probabilistic AI algorithms depend on — together with the XTR-0 prototype platform for low-latency communication between Extropic chips and traditional processors. Extropic also develops THRML, an open-source JAX library for building and sampling probabilistic graphical models (block Gibbs sampling and energy-based models), which serves as a simulator and prototyping surface for the block-sampling programs that will one day run on TSU hardware. Extropic is not an API provider: it ships no REST/GraphQL API, developer portal, or hosted service — its public developer surface is the THRML Python library, its documentation, and an agent skill. Backed by Kindred Ventures; surfaced to the API Evangelist network as an AI-hardware portfolio company.
 
-Backed by: kindred-ventures — https://extropic.ai/
+**Areas:** Company · Artificial Intelligence · Hardware · Semiconductors · Thermodynamic Computing · Probabilistic Computing · Energy-Based Models · Machine Learning · Open Source
+
+## Extropic on APIs.io
+
+Everything profiled for Extropic is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/extropic/](https://apis.io/providers/extropic/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Extropic Domain Security](https://apis.io/security/extropic/extropic-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://extropic.ai/)
+- [Documentation](https://docs.thrml.ai/)
+- [Getting started](https://docs.thrml.ai/getting-started.html)
+- [API reference](https://docs.thrml.ai/api-pgm.html)
+- [Blog](https://extropic.ai/writing)
+- [Terms of service](https://extropic.ai/terms-of-service)
+- [Privacy policy](https://extropic.ai/privacy-policy)
+- [GitHub](https://github.com/extropic-ai)
+
+## API Evangelist rating
+
+**Kin Score 20.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 21.1 |
+
+**Agent readiness 3.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/extropic/](https://apis.io/providers/extropic/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Extropic: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/extropic/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
